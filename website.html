@@ -130,5 +130,17 @@
         <p>Entre em contato via Whatsapp: <a href="tel:+55000000000">(00) 4002-8922</a> | Polos próximos a você: <a href="https://www.google.com/maps/search/lojas+de+camisas+esportivas">Lojas que fazem a entrega de nosso produto</a></p>
         <p>&copy; Camisas Zap Website</p>
     </footer>
+        <script>
+        // Obtém todos os botões de compra
+        const buyButtons = document.querySelectorAll('.product button');
+
+        // Define uma função de clique para cada botão
+        buyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Altera o texto do botão para "Adicionado ao carrinho" quando clicado
+                button.textContent = 'Adicionado ao carrinho!';
+            });
+        });
+    </script>
 </body>
 </html>
